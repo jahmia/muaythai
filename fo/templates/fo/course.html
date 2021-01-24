@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container marketing">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading"><a href="#child" style="color: inherit;">Cours enfants *</a></h2>
+      <h4 class="text-muted">Gymnase des Lilas, métro Place des Fêtes</h4>
+      <p class="lead">Samedi 09:00 - 10:15</p>
+      <h4 class="text-muted">Gymnase Jaurès, métro Laumière</h4>
+      <p class="lead">Mercredi 12:30 - 14:00</p>
+    </div>
+    <div class="col-md-5">
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="yellow"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2" id="women">
+      <h2 class="featurette-heading"><a href="#women" style="color: inherit;">Cours spécifique femmes</a></h2>
+      <h4 class="text-muted">Gymnase des Lilas</h4>
+      <p class="lead">Samedi 11:30 - 13:00</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="pink"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading"><a id="all" href="#all" class="link" style="color: inherit;">Cours Ado, Adultes *</a></h2>
+      <h4 class="text-muted">Gymnase des Lilas, métro Place des Fêtes</h4>
+      <p class="lead" style="text-align: right; margin-right: 4.5em;">
+        Mardi 20:00 - 22:00 <br>
+        Jeudi 15:30 - 17:00 <br>
+        Samedi 09:00 - 10:15 <br>
+      </p>
+      <p class="lead"></p>
+      <h4 class="text-muted">Gymnase Jaurès, métro Laumière</h4>
+      <p class="lead">Mercredi 12:10 - 14:00</p>
+    </div>
+    <div class="col-md-5">
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+    </div>
+  </div>
+
+  <hr class="featurette-divider" style="margin-bottom: 0.8rem;">
+  <p class="lead"> * Tous les cours sont mixtes except un créneau réservé aux femmes</p>
+</div>
+<script src="{% static 'js/auto-scroll.js' %}"></script>
+{% endblock %}

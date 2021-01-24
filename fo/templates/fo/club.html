@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<main>
+  <div class="container">
+    <h1>Le club</h1>
+    <p class="lead">YANA NAKMUAY 19 est une association sportive loi 1901 créée en 2011. <br>Nous sommes un club familial, convivial, situé à La Place des Fêtes, encourageant ses adhérents à se transcender et à donner le meilleur d'eux-même.</p>
+    <p class="lead">Nous proposons des cours pour tous les publics (cours spécifique enfants, femmes, adultes mixtes), et accueillant tout type de public, de l'enfant de 6 ans qui fait la découverte du muay thaï, à l'adulte qui souhaite une remise en forme, au compétiteur.</p>
+  </main>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm cours">
+            <h3 class="title-cours" style="background-color: #FAEE27">Enfants</h3>
+            <img src="{% static 'img/club2.jpg' %}" alt="childs boxers" style="height: 200px !important;"></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a id="child" href="course#child"><button type="button" class="btn btn-sm btn-outline-secondary">Voir</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm cours">
+            <h3 class="title-cours" style="background-color: #2F5BC3; color: white">Mixtes adultes</h3>
+            <img src="{% static 'img/cours2.jpg' %}" alt="boxers" style="height: 200px !important;"></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="course#all"><button type="button" class="btn btn-sm btn-outline-secondary">Voir</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm cours">
+            <h3 class="title-cours" style="background-color: pink">Femmes</h3>
+            <img src="{% static 'img/cours1.jpg' %}" style="height: 200px !important;" alt="women"></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="course#women"><button type="button" class="btn btn-sm btn-outline-secondary">Voir</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
