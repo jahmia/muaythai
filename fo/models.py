@@ -30,6 +30,7 @@ class User(models.Model):
     def __str__(self):
         return self.email[:12]
 
+
 class Arena(models.Model):
 
     """ Training Place
@@ -41,3 +42,11 @@ class Arena(models.Model):
 
     class Meta:
         ordering = ['name', 'active']
+
+
+class Message(models.Model):
+    name = models.CharField(max_length=32, blank=True)
+    email = models.EmailField()
+    phone = models.CharField(max_length=16, blank=True)
+    subject = models.CharField(max_length=64)
+    message = models.TextField(max_length=1000)

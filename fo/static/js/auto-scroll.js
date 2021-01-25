@@ -14,7 +14,6 @@ $(document).ready( function() {
         // *only* if we have anchor on the url
         if(window.location.hash) {
             new_v_position = $(window.location.hash).offset().top - 100;
-            console.log(new_v_position);
 
             // smooth scroll to the anchor id
             $('html, body').animate({

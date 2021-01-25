@@ -4,7 +4,7 @@
 {% block content %}
 <div class="container" style="margin-bottom: 2em;">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="{% static 'img/upc.gif' %}" alt="upc" width="120" height="72">
+    <img class="d-block mx-auto mb-4" src="{% static 'img/crab.svg' %}" alt="upc" width="120" height="72">
     <h2>Formulaire d'adhesion</h2>
     <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
   </div>
@@ -104,12 +104,22 @@
 
         <div class="mb-3">
           <label for="address2">Phone<span class="text-muted"></span></label>
-          <input type="text" class="form-control" id="address2" placeholder="06 35 18 90 54">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-phone"></i></span>
+            </div>
+            <input type="text" class="form-control" id="address2" placeholder="06 35 18 90 54">
+          </div>
         </div>
 
         <div class="mb-3">
           <label for="address2">Contact de secours<span class="text-muted"></span></label>
-          <input type="text" class="form-control" id="address2" placeholder="Personne à prévenir en cas d'accident" required>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-address-card-o"></i></span>
+            </div>
+            <textarea rows="2" class="form-control" id="address2" placeholder="Personne à prévenir en cas d'accident" required></textarea>
+          </div>
         </div>
 
         <hr class="mb-4">
