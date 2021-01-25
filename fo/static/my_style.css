@@ -24,11 +24,11 @@ main > .container {
 
 #home {
   background-image:
-    url("img/page1.png");
+    url("img/page1.jpg");
     background-size: cover;
     width: inherit;
-    height: auto;
-    min-height: 600px;
+    height: inherit;
+
 }
 
 .contact {
