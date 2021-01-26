@@ -15,7 +15,7 @@ class User(models.Model):
         if min_date > timezone.now().date():
             raise ValidationError(message='6 years old is the minimum age requirement, please join us later.')
 
-    inscription_date = models.DateField(default=timezone.now())
+    inscription_date = models.DateField(default=timezone.now)
     birthday = models.DateField(validators=[validate_six_years_or_older])
     adress = models.CharField(max_length=254, blank=True)
     phone = models.CharField(max_length=16, blank=True)
