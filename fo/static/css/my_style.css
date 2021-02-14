@@ -18,16 +18,41 @@ main > .container {
 }
 
 .footer > .container {
-  /*padding-right: 15px;*/
+    padding-right: 15px;
   /*padding-left: 15px;*/
+}
+
+@media (max-width: 600px) {
+  #home {
+    background-image:
+    url("../img/page1.jpg");
+    background-size: cover;
+    width: inherit;
+    min-height: 800px;
+  }
+}
+
+@media (max-height: 700px) {
+  #home {
+    background-image:
+    url("../img/page1.jpg");
+    background-size: cover;
+    width: inherit;
+    min-height: 1200px;
+  }
 }
 
 #home {
   background-image:
-    url("img/page1.jpg");
+    url("../img/page1.jpg");
     background-size: cover;
     width: inherit;
-    height: inherit;
+    /*min-height: 1200px;*/
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-align: justify;
+  height: inherit;
+  width: inherit;
 
 }
 
@@ -144,3 +169,37 @@ img {
 }
 
 .lh-condensed { line-height: 1.25; }
+
+
+/* Buttons
+-------------------------------------------------- */
+.btn-primary {
+    color: #fff;
+    background-color: #f6040f;
+    border-color: #655a5c;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: orange;
+    border-color: grey;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .show>.nav-link {
+    color: #c91616;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #f6040f;
+    border-color: grey;
+}
+
+.bg-dark {
+  background-color: #1f1e1d !important;
+}
